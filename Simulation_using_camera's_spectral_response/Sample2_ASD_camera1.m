@@ -1,0 +1,66 @@
+clc
+clear
+
+addpath(genpath('.'))
+
+load sample2_spec_dataset_Visible_3bands
+
+%% Considering only 5 bands
+
+[~,b]=intersect(Spectral_response_camera1(:,1),lambda);
+Spectral_response_camera1 = Spectral_response_camera1(b,2:end);
+
+incidence_angle = 35;
+reflection_angle = 12;
+
+%% Sample 1
+tic
+[sample2_0p5mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_0p5mm,...
+    lambda_camera1,sample2_0p5mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+
+[sample2_1p0mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_1p0mm,...
+    lambda_camera1,sample2_1p0mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_1p5mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_1p5mm,...
+    lambda_camera1,sample2_1p5mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_2p0mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_2p0mm,...
+    lambda_camera1,sample2_2p0mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_2p5mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_2p5mm,...
+    lambda_camera1,sample2_2p5mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_3p0mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_3p0mm,...
+    lambda_camera1,sample2_3p0mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_3p5mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_3p5mm,...
+    lambda_camera1,sample2_3p5mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_4p0mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_4p0mm,...
+    lambda_camera1,sample2_4p0mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_4p5mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_4p5mm,...
+    lambda_camera1,sample2_4p5mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+[sample2_5p0mm_thick,~]...
+    = invert_spectra_oil_with_spectral_response(Abs_spectrum_sample2,background_5p0mm,...
+    lambda_camera1,sample2_5p0mm,Spectral_response_camera1,incidence_angle,reflection_angle);
+
+toc
+
+clear Abs_spectrum_sample2 b background_0p5mm background_1p0mm background_1p5mm background_2p0mm
+clear background_2p5mm background_3p0mm background_3p5mm background_4p0mm background_4p5mm background_5p0mm
+clear lambda lambda_true sample2_0p5mm sample2_1p0mm sample2_1p5mm sample2_2p0mm sample2_2p5mm sample2_3p0mm
+clear sample2_3p5mm sample2_4p0mm sample2_4p5mm sample2_5p0mm
+clear Spectral_response_camera1 Spectral_response_camera2 incidence_angle lambda_camera1 lambda_camera2 reflection_angle
+
