@@ -17,3 +17,10 @@ To demonstrate the potential of the proposed method, we developed hyperspectral 
   <img width="792" height="404" src="RGB_outdoor.png">
 </p>
 
+If you use this dataset and the algorithm please do not forget to cite the following paper:
+
+Bikram Koirala, Nicholus Mboga, Robrecht Moelans, Els Knaeps, Seppe Sels, Frederik Winters, Svetlana Samsonova, Steve Vanlanduit, and Paul Scheunders,"Study on the potential of oil spill monitoring in a port environment using optical reflectance"
+
+Please feel free to contact bikram.koirala@unatwerpen.be for further information regarding the dataset.
+
+
