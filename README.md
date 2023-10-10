@@ -5,13 +5,6 @@ In this work, we studied the potential of the visible, near-infrared, and shortw
   <img width="976" height="659" src="Oils.png">
 </p>
 
-
-<img align="right" img width="976" height="659" src="Oils.png">
-
-
-
-
-
 The absorption spectra of these four oils were estimated by measuring the transmission spectra of samples of approximately 2 ml. 
 
 <p align="center">
