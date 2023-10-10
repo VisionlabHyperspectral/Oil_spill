@@ -6,6 +6,6 @@ The absorption spectra of these four oils were estimated by measuring the transm
 
  ![Graphical abstract](Absorption_spectra.png)
  
-To demonstrate the potential of the proposed method, we developed hyperspectral datasets of oil samples with varying thicknesses between 500 μm and 5000 μm acquired by two different sensors, an Agrispec spectrometer, and an Imec snapscan shortwave infrared hyperspectral camera, under strictly controlled experimental settings. To demonstrate the potential of the proposed method in outdoor environments using solely the visible wavelength region, we monitored the evolution of artificially spilled oil in an outdoor scene with an RGB camera mounted on a drone.
+To demonstrate the potential of the proposed method, we developed hyperspectral datasets of oil samples with varying thicknesses between 500 μm and 5000 μm acquired by two different sensors, an Agrispec (ASD) spectrometer, and an Imec snapscan shortwave infrared hyperspectral camera, under strictly controlled experimental settings. To demonstrate the potential of the proposed method in outdoor environments using solely the visible wavelength region, we monitored the evolution of artificially spilled oil in an outdoor scene with an RGB camera mounted on a drone.
 
  ![Graphical abstract](RGB_outdoor.png)
